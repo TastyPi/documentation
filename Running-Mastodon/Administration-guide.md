@@ -17,7 +17,7 @@ The following rake task:
 
 or, if using docker:
 
-    docker-compose run --rm web rails mastodon:make_admin USERNAME=alice
+    docker-compose run --rm web bin/tootctl accounts modify alice --role admin
 
 Would turn the local user "alice" into an admin.
 
